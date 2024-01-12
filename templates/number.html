@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers</title>
+</head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="Prime"> Prime Numbers</label> 
+        <input type="number" value="Prime" name="Prime" /> {{ msg }} <br>
+        <label for="Prime"> Armstrong Numbers</label>
+        <input type="number" value="Armstrong" name="Armstrong"/><br>
+        <label for="Prime"> Happy Numbers</label>
+        <input type="number" value="Happy" name="Happy"/><br>
+        <label for="Prime"> PaluPrime Numbers</label>
+        <input type="number" value="PaluPrime" name="PaluPrime"/><br>
+        <label for="Prime"> Emirp Numbers</label>
+        <input type="number" value="Emirp" name="Emirp"/><br>
+
+        <input type="submit" value="Check">
+        
+    </form>
+</body>
+</html>
